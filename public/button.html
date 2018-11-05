@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>
+      My Button Example with Express
+    </title>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('#server_button').click(function() {
+            $.get('http://localhost:4000/', function(data) {
+              $('#response_data').html(data); // show the list
+            });
+          });
+        });
+      </script>
+  </head>
+  <body>
+    <h1>
+      Team ArduinoPi - Uber Button
+    </h1>
+    <button type="button" name="button" id="server_button">Click me and talk to Express!</button>
+    <div id="response_data" />
+  </body>
+</html>

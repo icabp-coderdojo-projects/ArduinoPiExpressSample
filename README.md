@@ -41,6 +41,8 @@ npm start
 
 This launches `app.js`. To view the application in action, open your web browser, and navigate to `http://localhost:4000`.
 
+Next, in your browser navigate to `http://localhost:4000/button.html`. This webpage contains a button that, when clicked, will send a HTTP GET request (by using AJAX) to app.js at `htttp://localhost:4000`. The response output will be written onto the webpage beneath the button.
+
 ## What Happened
 
 `app.js` starts up a web server on port 4000, initialised with the Express framework. The code listens for incoming HTTP `GET` requests to the root of the application `/`, i.e. no other path. The incoming HTTP requests are represented by the `req` object.

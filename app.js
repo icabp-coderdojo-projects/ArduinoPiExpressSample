@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 const port = 4000
+//Tell Express to serve static html files from the 'public' folder.
+app.use(express.static('public'))
 
 
 //Configure express to listen for HTTP GET requests at "/"
@@ -21,7 +23,7 @@ app.get("/", (req, res) => {
         //Write the output data into the HTTP response object, 'res'.
         res.write(data)
         //Send the HTTP response back to the client and close the connection.
-        res.end("end");
+        res.end();
     });
 })
 
