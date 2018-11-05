@@ -1,0 +1,14 @@
+{
+  "name": "arduinopi",
+  "version": "1.0.0",
+  "description": "Sample Express app to run a Python script and return the output.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Michael OSullivan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
